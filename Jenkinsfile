@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'cp target/myapp.war $CATALINA_HOME/webapps'
+                sh 'cp target/App1Assignment5.war'
             }
         }
     }
