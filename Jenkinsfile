@@ -6,12 +6,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn clean install'
+                powershell 'mvn clean install'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'cp target/App1Assignment5.war $CATALINA_HOME/webapps'
+                powershell 'cp target/App1Assignment5.war $CATALINA_HOME/webapps'
             }
         }
     }
